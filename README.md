@@ -1,6 +1,8 @@
-# We Pos
+# 🖥We Pos
 University Senier-Project
 
+### [📚PDF 보고서 보기](https://docs.google.com/viewer?url=https://github.com/yujin000/Senier-Project/blob/master/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8_%EB%B3%B4%EA%B3%A0%EC%84%9C_%EA%B9%80%EC%B1%84%EC%98%81%2C%EC%8B%A0%EC%9C%A0%EC%A7%84.pdf?raw=T)
+------------
 ### **① 팀원별 이름 및 역할**
 * 공동 개발 : 김채영, 신유진
 
