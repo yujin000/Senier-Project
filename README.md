@@ -53,3 +53,16 @@ DB 설계, E-R 다이어그램, 프로그램 순서도 등 체계적으로 설�
 
 ------------
 ### [📚PDF 보고서 보기](https://docs.google.com/viewer?url=https://github.com/yujin000/Senier-Project/blob/master/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8_%EB%B3%B4%EA%B3%A0%EC%84%9C_%EA%B9%80%EC%B1%84%EC%98%81%2C%EC%8B%A0%EC%9C%A0%EC%A7%84.pdf?raw=T)
+### [📚PDF 발표자료 보기](https://drive.google.com/file/d/10QZPkJ0MzffHP4btcJSaFYftKSse3WNa/view?usp=share_link)
+------------
+### **[메인 화면]**
+![image](https://user-images.githubusercontent.com/101914200/217021170-b11a24fa-2b55-469d-93ae-debbf530b61a.png)
+### **[메뉴 추가 화면]**
+![image](https://user-images.githubusercontent.com/101914200/217021465-936f3de8-6968-4692-a758-cc125671e333.png)
+![image](https://user-images.githubusercontent.com/101914200/217021604-0b42eb6e-02d1-458e-9f89-ad1ffc3de42b.png)
+### **[메뉴 수정 화면]**
+![image](https://user-images.githubusercontent.com/101914200/217021788-9d58fe9c-519c-40dc-8846-5c3252504d2e.png)
+### **[판매 화면]**
+![image](https://user-images.githubusercontent.com/101914200/217022030-7dcf99bd-6d48-4af0-94be-76c529c79992.png)
+### **[매출 관리 화면]**
+![image](https://user-images.githubusercontent.com/101914200/217022665-5007b661-8cd9-41d5-a6f1-8e4a42d50d0f.png)
