@@ -3,7 +3,7 @@ Pos 사용자(사업자)가 고객의 주문메뉴를 받아 결제하는 시스
 
 # [📚PDF 보고서 보기](https://docs.google.com/viewer?url=https://github.com/yujin000/Senier-Project/blob/master/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8_%EB%B3%B4%EA%B3%A0%EC%84%9C_%EA%B9%80%EC%B1%84%EC%98%81%2C%EC%8B%A0%EC%9C%A0%EC%A7%84.pdf?raw=T)
 # [📄PDF 발표자료 보기](https://drive.google.com/file/d/10QZPkJ0MzffHP4btcJSaFYftKSse3WNa/view?usp=share_link)
-# [💬코드리뷰 보기](https://yudangdang.tistory.com/36)
+# [💬코드리뷰 보기](https://yudangdang.tistory.com/36) (24-04-04 수정)
 <br>
 # 목차
 
