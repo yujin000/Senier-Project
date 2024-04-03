@@ -17,18 +17,18 @@ import java.util.Vector;
 
 public class query {
 
-	Connection con; // db연결 나타내는 객체
-	Statement st; // sql문 실행 객체
-	ResultSetMetaData rsm; // esultSet에 관련된 메타데이터(데이터에 대한 데이터)를 나타내는 객체
-	ResultSet rs; // sql쿼리 결과 집합 객체
-	PreparedStatement ps; // 미리 컴파일된 sql문을 나타내는 객체, sql쿼리 실행할 때 매개변수 전달
+	Connection con; //db연결 나타내는 객체
+	Statement st; //sql문 실행 객체
+	ResultSetMetaData rsm; //esultSet에 관련된 메타데이터(데이터에 대한 데이터)를 나타내는 객체
+	ResultSet rs; //sql쿼리 결과 집합 객체
+	PreparedStatement ps; //미리 컴파일된 sql문을 나타내는 객체, sql쿼리 실행할 때 매개변수 전달
 
-	// db연결
+	//db연결
 	public query() {
 		try {
-			// 로드
+			//로드
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			// 연결
+			//연결
 			con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "root", "1234");
 		} catch (ClassNotFoundException e) {
 			System.out.println(e + "=> 로드 fail");
@@ -37,7 +37,7 @@ public class query {
 		}
 	}
 
-	// db 종료
+	//db 종료
 	public void dbClose() {
 		try {
 			if (rs != null)
@@ -71,18 +71,18 @@ public class query {
 		return state;
 	}
 	
-	// user 찾기, 로그인 시 가입 여부 체크할 때 사용
+	//user 찾기, 로그인 시 가입 여부 체크할 때 사용
 	public int findUser(String pw, String name) {
 		int cnt = 0;
 		try {
 			ps = con.prepareStatement(
 					"SELECT COUNT(*) AS CNT FROM PWSET WHERE PW = '" + pw + "' AND NAME = '" + name + "'");
-			rs = ps.executeQuery(); // 쿼리 실행 결과 저장
+			rs = ps.executeQuery(); //쿼리 실행 결과 저장
 			if (rs.next()) {
 				cnt = Integer.parseInt(rs.getString("CNT"));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace(); // 예외 발생 시 예외 정보 출력
+			e.printStackTrace(); //예외 발생 시 예외 정보 출력
 		} finally {
 			dbClose();
 		}
@@ -141,7 +141,7 @@ public class query {
 		String str = "";
 
 		try {
-			// 메뉴번호 중복 검사
+			//메뉴번호 중복 검사
 			ps = con.prepareStatement("SELECT * FROM MENU WHERE MENUNUM = '" + list.get(0) + "'");
 			rs = ps.executeQuery();
 			
@@ -203,7 +203,6 @@ public class query {
 				}
 			}
 			
-			//
 			if(cnt != 0) {
 				result = true;
 			} else {
@@ -261,7 +260,7 @@ public class query {
 			return list;
 		}
 		
-	// 주문목록에 주문한 메뉴 추가
+	//주문목록에 주문한 메뉴 추가
 	public void insert(int menuNum) {
 		try {
 			ps = con.prepareStatement("SELECT * FROM SELL WHERE MENUNUM = '" + menuNum + "'");
@@ -269,7 +268,7 @@ public class query {
 			int price = 0; 
 			String menuName = "";
 
-			// 주문목록에 없다면
+			//주문목록에 없다면
 			if (!rs.next()) {
 				ps = con.prepareStatement("SELECT * FROM MENU WHERE MENUNUM = " + menuNum);
 				rs = ps.executeQuery();
@@ -284,7 +283,7 @@ public class query {
 				ps.setString(2, menuName);
 				ps.setInt(3, price);
 				ps.setInt(4, 1);
-			} else { // 주문목록에 있다면
+			} else { //주문목록에 있다면
 				ps = con.prepareStatement("UPDATE SELL SET MENUC = MENUC + 1 WHERE MENUNUM = '" + menuNum + "'");
 			}
 
