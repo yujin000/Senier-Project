@@ -67,9 +67,10 @@ Pos 사용자(사업자)가 고객의 주문메뉴를 받아 결제하는 시스
 <img src="https://user-images.githubusercontent.com/101914200/220866077-5da6e47e-2869-4e08-b752-a635917ce256.png" height="40%" width="40%">
 
 * **ERD**
-<img src="https://user-images.githubusercontent.com/101914200/220868365-861b3c21-3301-4b4b-b6cc-ab2419f1ed07.png" height="50%" width="50%">
+<img src="https://github.com/yujin000/Senier-Project/assets/101914200/cfb2642c-976b-4464-b6a5-c869742c16cb" height="95%" width="95%">
 
 -------------
+
 
 ### **[메인 화면]**
 ![image](https://user-images.githubusercontent.com/101914200/217021170-b11a24fa-2b55-469d-93ae-debbf530b61a.png)
