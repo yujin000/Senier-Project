@@ -141,19 +141,15 @@ public class query {
 		String str = "";
 
 		try {
-			//메뉴번호 중복 검사
-			ps = con.prepareStatement("SELECT * FROM MENU WHERE MENUNUM = '" + list.get(0) + "'");
-			rs = ps.executeQuery();
-			
-			//중복 아니면 메뉴 추가
-			if (!rs.next()) {
-				ps = con.prepareStatement("INSERT INTO MENU VALUES(?, ?, ?, ?)");
+			//메뉴번호 중복 검사 및 추가
+			ps = con.prepareStatement("INSERT INTO MENU (MENUNUM, MENUNAME, PRICE, INVENTORY) SELECT ?, ?, ?, ? FROM DUAL WHERE NOT EXISTS(SELECT 1 FROM MENU WHERE MENUNUM=?)");
 				ps.setString(1, list.get(0));
 				ps.setString(2, list.get(1));
 				ps.setString(3, list.get(2));
 				ps.setString(4, list.get(3));
-				ps.executeUpdate();
-			} else {
+				ps.setString(5, list.get(0));
+				int cnt = ps.executeUpdate();
+			 if(cnt==0) {
 				str = "메뉴번호가 중복됩니다.";
 			}
 		} catch (SQLException e) {
